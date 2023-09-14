@@ -1,11 +1,11 @@
-let totalVotes = sessionStorage.getItem("total-votes") || 0;
+let totalVotes = localStorage.getItem("total-votes") || 0;
 
 let cats;
 
 $.get("https://latelier.co/data/cats.json?callback=?", function(data){
 	cats = data.images;
 	$.each( cats, function( _, val ) {
-		nbVotes = sessionStorage.getItem(val.url) || 0;
+		nbVotes = localStorage.getItem(val.url) || 0;
 		$( ".list" ).append( 
 			`<figure id=${val.id}>
 				<div><img src="${val.url}" alt="cat"></div>
@@ -19,11 +19,11 @@ $.get("https://latelier.co/data/cats.json?callback=?", function(data){
 
 function handleVote(src){
 	totalVotes++;
-	sessionStorage.setItem("total-votes", totalVotes);
+	localStorage.setItem("total-votes", totalVotes);
 	$('.total-votes').text(`${totalVotes}${totalVotes < 2 ? ' vote' : ' votes'}`);
 
-	let votes = sessionStorage.getItem(src) || 0;
-	sessionStorage.setItem(src, ++votes);
+	let votes = localStorage.getItem(src) || 0;
+	localStorage.setItem(src, ++votes);
 	
 	const randomNumberLeft = Math.floor(Math.random() * 100);
 	const newSrcLeft = cats[randomNumberLeft].url;
