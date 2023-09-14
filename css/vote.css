@@ -64,3 +64,36 @@ h1 {
 .frame > img:hover {
 	cursor: pointer;
 }
+
+.total-votes {
+	text-align: center;
+}
+
+a:visited {
+	color: #0A3C7D;
+}
+
+#top-cats {
+	background-color: #fafafb;
+	border: 9px solid #e4f0ff;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+	border-bottom: none;
+	bottom:8px;
+}
+
+#top-cats > p {
+	margin-bottom: 0;
+}
+
+#top-cats > a {
+	color: black;
+	text-decoration: none;
+	padding: 8px;
+	font-size: large;
+}
+
+#top-cats > a:hover {
+	background-color: #f0f6fe;
+	border-radius: 6px;;
+}
