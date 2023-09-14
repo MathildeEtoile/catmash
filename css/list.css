@@ -1,0 +1,38 @@
+.list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	row-gap:20px;
+}
+
+figure {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	text-align: center;
+	border: 3px solid #e4f0ff;
+	margin:0;
+	padding:8px;
+	border-radius: 12px;
+	height:300px;
+
+}
+
+figure > div {
+	display:flex;
+	height: 273px;
+	align-items: center;
+}
+
+figure > div > img {
+	width:250px;
+    object-fit: cover;
+    overflow: hidden;
+	max-height: 100%;
+	border-radius: 6px;
+}
+
+figure > figcaption {
+	padding-top: 8px;
+}
