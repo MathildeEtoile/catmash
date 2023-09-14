@@ -24,6 +24,17 @@ function handleVote(src){
 
 	let votes = sessionStorage.getItem(src) || 0;
 	sessionStorage.setItem(src, ++votes);
+	
+	const randomNumberLeft = Math.floor(Math.random() * 100);
+	const newSrcLeft = cats[randomNumberLeft].url;
+	$('.frame#left').empty().append(`<img src="${newSrcLeft}" alt="cat" onclick="handleVote(this.src)"></img>`);
+
+	let randomNumberRight = Math.floor(Math.random() * 100);
+	while (randomNumberRight === randomNumberLeft){
+		randomNumberRight = Math.floor(Math.random() * 100);
+	}
+	const newSrcRight = cats[randomNumberRight].url;
+	$('.frame#right').empty().append(`<img src="${newSrcRight}" alt="cat" onclick="handleVote(this.src)"></img>`);
 }
 
 $(document).ready(function(){
