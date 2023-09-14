@@ -16,6 +16,16 @@ $.get("https://latelier.co/data/cats.json?callback=?", function(data){
 	});
 });
 
+
+function handleVote(src){
+	totalVotes++;
+	sessionStorage.setItem("total-votes", totalVotes);
+	$('.total-votes').text(`${totalVotes}${totalVotes < 2 ? ' vote' : ' votes'}`);
+
+	let votes = sessionStorage.getItem(src) || 0;
+	sessionStorage.setItem(src, ++votes);
+}
+
 $(document).ready(function(){
 	$('.total-votes').text(`${totalVotes}${totalVotes < 2 ? ' vote' : ' votes'}`);	
 });
