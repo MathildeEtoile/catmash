@@ -1,0 +1,45 @@
+html {
+	height: 100%;
+}
+
+body {
+	height:calc(100% - 2 * 8px);
+}
+
+.container {
+	height:100%;
+	display: grid;
+  	grid-template-columns: repeat(2, 1fr);
+}
+
+#left {
+	grid-column: 1 / 2;
+	grid-row: 1;
+	background-color: #e4f0ff;
+}
+
+#right {
+	grid-column: 2 / 2;
+	grid-row: 1;
+	background-color: #fafafb;
+}
+
+.frame {
+	display: flex;
+	justify-content: center;
+    align-items: center;
+}
+
+.frame > img {
+	border: 5px solid #0A3C7D;
+	width:35%;
+	height:35%;
+    object-fit: cover;
+    overflow: hidden;
+	min-width: 250px;
+	border-radius: 12px;
+}
+
+.frame > img:hover {
+	cursor: pointer;
+}
