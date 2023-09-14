@@ -1,0 +1,28 @@
+html {
+	height: 100%;
+}
+
+body {
+	height:calc(100% - 2 * 8px);
+}
+
+.over {
+	padding: 16px;
+	position:absolute;
+	left: 50%;
+ 	transform: translate(-50%,0);
+	text-align: center;
+}
+
+h1 {
+	color: #0A3C7D;
+	text-align: center;
+}
+
+.total-votes {
+	text-align: center;
+}
+
+a:visited {
+	color: #0A3C7D;
+}

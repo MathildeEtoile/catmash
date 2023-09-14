@@ -1,30 +1,5 @@
-html {
-	height: 100%;
-}
-
-body {
-	height:calc(100% - 2 * 8px);
-}
-
-.over {
-	padding: 16px;
-	position:absolute;
-	left: 50%;
- 	transform: translate(-50%,0);
-	text-align: center;
-}
-
 #logo {
 	width: 100px;
-}
-
-#title > h1 {
-	margin: 0;
-}
-
-h1 {
-	color: #0A3C7D;
-	text-align: center;
 }
 
 .container {
@@ -65,12 +40,8 @@ h1 {
 	cursor: pointer;
 }
 
-.total-votes {
-	text-align: center;
-}
-
-a:visited {
-	color: #0A3C7D;
+#title > h1 {
+	margin: 0;
 }
 
 #top-cats {
