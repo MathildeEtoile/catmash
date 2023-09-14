@@ -6,6 +6,27 @@ body {
 	height:calc(100% - 2 * 8px);
 }
 
+.over {
+	padding: 16px;
+	position:absolute;
+	left: 50%;
+ 	transform: translate(-50%,0);
+	text-align: center;
+}
+
+#logo {
+	width: 100px;
+}
+
+#title > h1 {
+	margin: 0;
+}
+
+h1 {
+	color: #0A3C7D;
+	text-align: center;
+}
+
 .container {
 	height:100%;
 	display: grid;
