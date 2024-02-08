@@ -7,7 +7,7 @@
     <bpmn:messageFlow id="Flow_01i4d4m" name="Réponse validation" sourceRef="Participant_1bdelcm" targetRef="Event_0rbq0oa" />
     <bpmn:messageFlow id="Flow_1qrrjka" name="Facture" sourceRef="Event_1yvwj0c" targetRef="Participant_1bdelcm" />
   </bpmn:collaboration>
-  <bpmn:process id="Process_0er1r7a" isExecutable="true" camunda:historyTimeToLive="180">
+  <bpmn:process id="Process_0er1r7a" name="Facturation" isExecutable="true" camunda:historyTimeToLive="180">
     <bpmn:laneSet id="LaneSet_1iyo01g">
       <bpmn:lane id="Lane_185sex2" name="PEI">
         <bpmn:flowNodeRef>Event_04f24ws</bpmn:flowNodeRef>
